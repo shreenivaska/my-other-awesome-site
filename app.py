@@ -44,6 +44,8 @@ def home():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     form = LoginForm()
+    form.username.data = ADMIN_USERNAME
+    form.password.data = ADMIN_PASSWORD
     if form.validate_on_submit():
         if (
             form.username.data == ADMIN_USERNAME
