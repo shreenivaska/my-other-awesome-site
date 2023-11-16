@@ -15,7 +15,7 @@ ADMIN_USERNAME = os.environ.get("ADMIN_USERNAME")
 ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD")
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "your_secret_key_here"
+app.config["SECRET_KEY"] = "this_is_not_a_secret"
 app.config["SESSION_TYPE"] = "filesystem"
 
 
